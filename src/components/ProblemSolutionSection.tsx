@@ -97,7 +97,7 @@ export default function ProblemSolutionSection() {
               fontSize: '1.75rem'
             }}
           >
-            The U.S. race to power AI innovation and kickstart domestic manufacturing faces a critical roadblock
+            The U.S. race to power AI innovation and reshore domestic manufacturing faces a critical roadblock
           </Typography>
         </Box>
         
@@ -239,7 +239,7 @@ export default function ProblemSolutionSection() {
                     What is Surplus Interconnection?
                   </Typography>
                   <Typography variant="body1" sx={{ fontSize: '0.9rem', mb: 0, lineHeight: 1.5, color: 'white', fontWeight: 400 }}>
-                    Surplus Interconnection is a strategy that leverages existing grid connections that are underutilized, allowing new clean energy resources to connect at these points without waiting for new transmission infrastructure. <strong style={{color: '#8ecae6'}}>FERC Order 845 (2018)</strong> allows surplus interconnection, enabling faster renewable energy deployment.
+                  Surplus Interconnection Service allows new electricity supply resources to connect to the grid using existing infrastructure that serves already operating generators, without exceeding the total output capacity already allocated to the existing resource. FERC Order 845 (2018) cleared a regulatory pathway for generators to add new electricity resources to the grid by utilizing surplus capacity at existing interconnection points.
                   </Typography>
                 </Box>
 

@@ -20,11 +20,15 @@ import {
 } from '@mui/material';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 export default function ApproachSection() {
   const theme = useTheme();
@@ -187,44 +191,67 @@ export default function ApproachSection() {
                   </Box>
                   
                   <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.2rem', lineHeight: 1.6, mb: 3 }}>
-                    Existing thermal power plants have established grid connections that sit unused for significant 
-                    periods of time. By co-locating new solar and wind generation at these sites, we can bypass 
-                    lengthy interconnection queues while making use of the current infrastructure.
+                    Over 200 GW of fossil capacity has capacity factor less than 15%, leaving grid connections unused for significant periods. Moreover, 75% of fossil capacity operates at costs higher than local solar LCOE. By co-locating new solar and wind generation at these sites, we can bypass lengthy interconnection queues and add cheap electricity while making use of the current infrastructure.
                   </Typography>
 
                   {/* Action Buttons */}
-                  <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: 2, justifyContent: 'flex-start' }}>
                     <Button 
                       variant="contained" 
                       size="small"
-                      startIcon={<BarChartIcon sx={{ fontSize: '0.9rem' }} />}
-                      href="https://scarcitytosurplus.com/dashboard" 
+                      startIcon={<MenuBookIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/2025-02-21_GridLab_Surplus_Interconnection_Technical_Paper.pdf" 
                       target="_blank"
                       sx={{ 
                         bgcolor: '#B44D12', 
                         '&:hover': { bgcolor: '#933F0F' },
-                        mr: 1,
-                        py: 0.7,
-                        fontSize: '0.9rem'
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
                       }}
                     >
-                      Dashboard
+                      Technical Report
                     </Button>
                     <Button 
-                      variant="outlined"
+                      variant="contained" 
                       size="small"
-                      startIcon={<PictureAsPdfIcon sx={{ fontSize: '0.9rem' }} />}
-                      href="https://gspp.berkeley.edu/assets/uploads/page/Surplus_Interconnection.pdf" 
+                      startIcon={<SummarizeIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/GridLab_Surplus_Interconnection_Issue_Brief.pdf" 
                       target="_blank"
                       sx={{ 
-                        color: '#B44D12', 
-                        borderColor: '#B44D12', 
-                        '&:hover': { borderColor: '#933F0F' },
-                        py: 0.7,
-                        fontSize: '0.9rem'
+                        bgcolor: '#B44D12', 
+                        '&:hover': { bgcolor: '#933F0F' },
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
                       }}
                     >
-                      Report
+                      Issue Brief
+                    </Button>
+                    <Button 
+                      variant="contained" 
+                      size="small"
+                      startIcon={<LightbulbIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/2025-02-21_GridLab_Surplus_Interconnection_Barriers_Report.pdf" 
+                      target="_blank"
+                      sx={{ 
+                        bgcolor: '#B44D12', 
+                        '&:hover': { bgcolor: '#933F0F' },
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
+                      }}
+                    >
+                      Barriers & Recommendations
                     </Button>
                   </Box>
                 </Box>
@@ -372,44 +399,68 @@ export default function ApproachSection() {
                   </Box>
                   
                   <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.2rem', lineHeight: 1.6, mb: 3 }}>
-                    Existing renewable energy plants are often constrained by the variability of their power output. 
-                    By adding energy storage and complementary generation, we can maximize the use of their interconnection 
-                    capacity and provide more reliable power to the grid.
+                    Renewable plants have low capacity credits (PJM: 9% solar, 35% wind vs. 79% gas) and poor interconnection utilization (average: 37.5%; Solar: 29.9%, Wind: 46.9%), meaning expensive grid infrastructure sits idle much of the time. Adding 6-hour storage can dramatically increase capacity value and utilization rates to levels comparable to baseload gas plants, effectively turning variable renewables into firm power resources.
                   </Typography>
 
                   {/* Action Buttons */}
-                  <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+                                    {/* Action Buttons */}
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: 2, justifyContent: 'flex-start' }}>
                     <Button 
                       variant="contained" 
                       size="small"
-                      startIcon={<BarChartIcon sx={{ fontSize: '0.9rem' }} />}
-                      href="https://scarcitytosurplus.com/dashboard" 
+                      startIcon={<MenuBookIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/2025-02-21_GridLab_Surplus_Interconnection_Technical_Paper.pdf" 
                       target="_blank"
                       sx={{ 
                         bgcolor: '#B44D12', 
                         '&:hover': { bgcolor: '#933F0F' },
-                        mr: 1,
-                        py: 0.7,
-                        fontSize: '0.9rem'
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
                       }}
                     >
-                      Dashboard
+                      Technical Report
                     </Button>
                     <Button 
-                      variant="outlined"
+                      variant="contained" 
                       size="small"
-                      startIcon={<PictureAsPdfIcon sx={{ fontSize: '0.9rem' }} />}
-                      href="https://gspp.berkeley.edu/assets/uploads/page/Surplus_Interconnection.pdf" 
+                      startIcon={<SummarizeIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/GridLab_Surplus_Interconnection_Issue_Brief.pdf" 
                       target="_blank"
                       sx={{ 
-                        color: '#B44D12', 
-                        borderColor: '#B44D12', 
-                        '&:hover': { borderColor: '#933F0F' },
-                        py: 0.7,
-                        fontSize: '0.9rem'
+                        bgcolor: '#B44D12', 
+                        '&:hover': { bgcolor: '#933F0F' },
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
                       }}
                     >
-                      Report
+                      Issue Brief
+                    </Button>
+                    <Button 
+                      variant="contained" 
+                      size="small"
+                      startIcon={<LightbulbIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      endIcon={<LaunchIcon sx={{ fontSize: '0.9rem',
+                        whiteSpace: 'nowrap' }} />}
+                      href="https://surplusinterconnection.s3.us-east-1.amazonaws.com/2025-02-21_GridLab_Surplus_Interconnection_Barriers_Report.pdf" 
+                      target="_blank"
+                      sx={{ 
+                        bgcolor: '#B44D12', 
+                        '&:hover': { bgcolor: '#933F0F' },
+                        py: 0.6, px: 1.2,
+                        fontSize: '0.9rem',
+                        whiteSpace: 'nowrap'
+                      }}
+                    >
+                      Barriers & Recommendations
                     </Button>
                   </Box>
                 </Box>

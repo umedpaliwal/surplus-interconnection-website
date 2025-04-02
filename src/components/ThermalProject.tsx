@@ -186,7 +186,7 @@ export default function ThermalProject() {
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 3, flexWrap: 'wrap' }}>
             <Button 
               variant="contained"
-              href="https://scarcitytosurplus.com/dashboard" 
+              href="https://surplusint-git-dev-energy-ai.vercel.app/re/dashboard" 
               target="_blank"
               rel="noopener noreferrer"
               sx={{ 
@@ -200,7 +200,7 @@ export default function ThermalProject() {
                 px: 3
               }}
             >
-              Interactive Dashboard
+              Explore Dashboard
             </Button>
             <Button 
               variant="outlined"

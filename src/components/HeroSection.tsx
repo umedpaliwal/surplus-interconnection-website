@@ -91,7 +91,7 @@ export default function HeroSection() {
                   lineHeight: 1.4
                 }}
               >
-                Leveraging Existing Infrastructure for Renewable Energy Growth
+                Leveraging Existing Infrastructure for Rapid Electricity Deployment
               </Typography>
             </Box>
             
@@ -99,7 +99,7 @@ export default function HeroSection() {
               <Button 
                 variant="contained" 
                 size="large"
-                href="https://scarcitytosurplus.com/dashboard"
+                href="https://surplusint-git-dev-energy-ai.vercel.app/re/dashboard"
                 target="_blank"
                 endIcon={<LaunchIcon />}
                 sx={{
@@ -118,7 +118,7 @@ export default function HeroSection() {
                   display: 'inline-block'
                 }}
               >
-                Dashboard
+                Explore Dashboard
               </Button>
             </Box>
           </Grid>

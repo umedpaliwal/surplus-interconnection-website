@@ -46,7 +46,7 @@ export default function CallToActionSection() {
                   variant="contained"
                   color="primary"
                   size="large"
-                  href="https://scarcitytosurplus.com/dashboard"
+                  href="https://surplusint-git-dev-energy-ai.vercel.app/re/dashboard"
                   target="_blank"
                   endIcon={<LaunchIcon />}
                   sx={{
@@ -60,7 +60,7 @@ export default function CallToActionSection() {
                     }
                   }}
                 >
-                  Launch Dashboard
+                  Explore Dashboard
                 </Button>
                 
                 <Button
