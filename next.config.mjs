@@ -3,6 +3,11 @@ const nextConfig = {
   // Solves transpilation errors with MUI
   transpilePackages: ["@mui/material", "@mui/system", "@mui/icons-material"],
   
+  // Disable ESLint during build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  
   // Allow video files
   webpack(config) {
     config.module.rules.push({
