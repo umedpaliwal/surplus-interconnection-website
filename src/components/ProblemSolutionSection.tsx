@@ -144,54 +144,43 @@ export default function ProblemSolutionSection() {
                   <Stack direction="row" spacing={1.5} sx={{ mb: 2, alignItems: 'center' }}>
                     <BoltIcon sx={{ fontSize: 28, color: '#48cae4' }} />
                     <Typography variant="h5" sx={{ fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
-                      Unprecedented Load Growth
+                      Unprecedented Demand Surge
                     </Typography>
                   </Stack>
                   <Typography variant="body1" sx={{ fontSize: '0.9rem', mb: 2, lineHeight: 1.5, color: 'white', fontWeight: 400 }}>
-                    A <strong style={{color: '#48cae4'}}>fivefold increase</strong> in electricity demand forecasts over just two years, with projections reaching <strong style={{color: '#48cae4'}}>128 GW by 2029</strong> — far outpacing planned capacity additions.
+                    U.S. load forecasts have surged fivefold to <strong style={{color: '#48cae4'}}>128 GW from 2025-2029</strong>, driven by data centers (65-90+ GW), manufacturing, and electrification.
                   </Typography>
-                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5 }}>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <MemoryIcon sx={{fontSize: '0.9rem'}} />
-                      Data Centers & AI: 65-90+ GW
+
+                </Box>
+                
+                <Divider sx={{ my: 3, borderColor: 'rgba(72,202,228,0.2)' }} />
+
+                <Box sx={{ mb: 3 }}>
+                  <Stack direction="row" spacing={1.5} sx={{ mb: 2, alignItems: 'center' }}>
+                    <WarningAmberIcon sx={{ fontSize: 28, color: '#48cae4' }} />
+                    <Typography variant="h5" sx={{ fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
+                      Capacity Addition Shortfall
                     </Typography>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <SettingsEthernetIcon sx={{fontSize: '0.9rem'}} />
-                      Manufacturing: 20+ GW
-                    </Typography>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <EnergySavingsLeafIcon sx={{fontSize: '0.9rem'}} />
-                      Electrification: ~20 GW
-                    </Typography>
-                  </Box>
+                  </Stack>
+                  <Typography variant="body1" sx={{ fontSize: '0.9rem', mb: 2, lineHeight: 1.5, color: 'white', fontWeight: 400 }}>
+                    Planned firm capacity additions will cover only <strong style={{color: '#48cae4'}}>64% of projected peak load growth</strong> through 2029. New gas plants face 5-8 year delays due to equipment shortages and permitting, putting them online no earlier than 2030-2032—too late for immediate needs.
+                  </Typography>
+
                 </Box>
                 
                 <Divider sx={{ my: 3, borderColor: 'rgba(72,202,228,0.2)' }} />
 
                 <Box>
                   <Stack direction="row" spacing={1.5} sx={{ mb: 2, alignItems: 'center' }}>
-                    <WarningAmberIcon sx={{ fontSize: 28, color: '#48cae4' }} />
+                    <SettingsEthernetIcon sx={{ fontSize: 28, color: '#48cae4' }} />
                     <Typography variant="h5" sx={{ fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
-                      Critical Supply Gap
+                      Grid Connection Bottlenecks
                     </Typography>
                   </Stack>
                   <Typography variant="body1" sx={{ fontSize: '0.9rem', mb: 2, lineHeight: 1.5, color: 'white', fontWeight: 400 }}>
-                    Planned capacity additions will <strong style={{color: '#48cae4'}}>not be sufficient</strong> to meet projected load growth, threatening power supply reliability and triggering price spikes in capacity markets. A supply gap of up to <strong style={{color: '#48cae4'}}>50 GW</strong> could emerge even if all planned gas and storage projects come online as expected.
+                    Over 2,500 GW sits trapped in interconnection queues with 5-6 year waits and rapidly rising costs. High-voltage transformer shortages, transmission upgrade timelines, and grid study delays extend deployment by years. Without solutions bypassing these bottlenecks, the U.S. faces higher electricity prices and constrained economic growth.
                   </Typography>
-                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5 }}>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <QueryBuilderIcon sx={{fontSize: '0.9rem'}} />
-                      5-8+ year timelines
-                    </Typography>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <SpeedIcon sx={{fontSize: '0.9rem'}} />
-                      2,584 GW in queues
-                    </Typography>
-                    <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#48cae4', fontSize: '0.85rem', bgcolor: 'rgba(0,50,80,0.5)', py: 0.5, px: 1.5, borderRadius: 1.5, border: '1px solid rgba(72,202,228,0.2)' }}>
-                      <SavingsIcon sx={{fontSize: '0.9rem'}} />
-                      Soaring capacity costs
-                    </Typography>
-                  </Box>
+
                 </Box>
               </CardContent>
             </Card>
