@@ -99,7 +99,7 @@ export default function HeroSection() {
               <Button 
                 variant="contained" 
                 size="large"
-                href="https://surplusint-git-dev-energy-ai.vercel.app/re/dashboard"
+                href="https://dev.scarcitytosurplus.com/re/dashboard"
                 target="_blank"
                 endIcon={<LaunchIcon />}
                 sx={{
